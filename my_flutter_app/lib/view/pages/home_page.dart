@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
       'color': AppPallete.primaryColor,
       'page': const MarkDuty(),
     },{
-      'icon' : AppConstants.markDutyIcon,
+      'icon' : AppConstants.settingsIcon,
       'name' : Strings.login,
       'color' : AppPallete.infoScreen,
       'page' : const LoginPage(),

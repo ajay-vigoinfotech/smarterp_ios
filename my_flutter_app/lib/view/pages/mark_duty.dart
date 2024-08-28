@@ -32,7 +32,7 @@ class _MarkDutyState extends State<MarkDuty> {
   void _updateTime() {
     final DateTime now = DateTime.now();
     final String formattedDateTime =
-        DateFormat('dd-MM-yyyy – kk:mm:ss').format(now);
+        DateFormat('dd-MM-yyyy – hh:mm a').format(now);
     setState(() {
       _formattedDateTime = formattedDateTime;
     });

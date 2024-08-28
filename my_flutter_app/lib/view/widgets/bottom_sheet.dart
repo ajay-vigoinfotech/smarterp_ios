@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/utils/constant.dart';
 
 class BottomSheet extends StatelessWidget {
   const BottomSheet({super.key});
@@ -18,17 +19,22 @@ class BottomSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           ListTile(
-            leading: const Icon(Icons.settings),
+            leading: AppConstants.settingsIcon,
             title: const Text('Settings'),
             onTap: () {
               // Handle settings action
             },
-          ),
-          ListTile(
-            leading: const Icon(Icons.logout),
-            title: const Text('Logout'),
+          ),ListTile(
+            leading: AppConstants.settingsIcon,
+            title: const Text('Settings'),
             onTap: () {
-              // Handle logout action
+              // Handle settings action
+            },
+          ),ListTile(
+            leading: AppConstants.settingsIcon,
+            title: const Text('Settings'),
+            onTap: () {
+              // Handle settings action
             },
           ),
         ],
