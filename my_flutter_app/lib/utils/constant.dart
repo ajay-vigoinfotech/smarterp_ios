@@ -7,4 +7,5 @@ class AppConstants {
 
   //App Icons
   static const Icon markDutyIcon = Icon(Icons.watch_later_outlined);
+  static const Icon settingsIcon = Icon(Icons.settings);
 }
