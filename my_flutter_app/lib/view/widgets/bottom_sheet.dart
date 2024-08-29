@@ -6,38 +6,36 @@ class BottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16.0),
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
+    return SizedBox(
+      height: 500,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: AppConstants.settingsIcon,
+              title: const Text('Settings'),
+              onTap: () {
+                // Handle settings action
+              },
+            ),
+            ListTile(
+              leading: AppConstants.settingsIcon,
+              title: const Text('Settings'),
+              onTap: () {
+                // Handle settings action
+              },
+            ),
+            ListTile(
+              leading: AppConstants.settingsIcon,
+              title: const Text('Settings'),
+              onTap: () {
+                // Handle settings action
+              },
+            ),
+          ],
         ),
-        color: Colors.white,
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          ListTile(
-            leading: AppConstants.settingsIcon,
-            title: const Text('Settings'),
-            onTap: () {
-              // Handle settings action
-            },
-          ),ListTile(
-            leading: AppConstants.settingsIcon,
-            title: const Text('Settings'),
-            onTap: () {
-              // Handle settings action
-            },
-          ),ListTile(
-            leading: AppConstants.settingsIcon,
-            title: const Text('Settings'),
-            onTap: () {
-              // Handle settings action
-            },
-          ),
-        ],
       ),
     );
   }

@@ -66,21 +66,10 @@ class InfoScreen extends StatelessWidget {
                               onTap: () {
                                 // Handle settings action
                               },
-                            ),ListTile(
-                              leading: AppConstants.settingsIcon,
-                              title: const Text('Settings'),
-                              onTap: () {
-                                // Handle settings action
-                              },
-                            ),ListTile(
-                              leading: AppConstants.settingsIcon,
-                              title: const Text('Settings'),
-                              onTap: () {
-                                // Handle settings action
-                              },
-                            ),ListTile(
-                              leading: AppConstants.settingsIcon,
-                              title: const Text('Settings'),
+                            ),
+                            ListTile(
+                              leading: AppConstants.logoutIcon,
+                              title: const Text('Logout'),
                               onTap: () {
                                 // Handle settings action
                               },
